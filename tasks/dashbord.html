@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehouse Shipment Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2>WMS Pro</h2>
+            <ul>
+                <li class="active">Inventory</li>
+                <li>Shipments</li>
+                <li>Reports</li>
+                <li>Settings</li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1>Shipment Dashboard</h1>
+                <div class="user-profile">Ganesh Bawaskar</div>
+            </header>
+
+            <section class="kpi-grid">
+                <div class="card card-inbound">
+                    <h3>Inbound (PO)</h3>
+                    <p class="value">24</p>
+                    <span class="trend">↑ 5% from yesterday</span>
+                </div>
+                <div class="card card-outbound">
+                    <h3>Outbound (LTL)</h3>
+                    <p class="value">12</p>
+                    <span class="trend">Scheduled Today</span>
+                </div>
+                <div class="card card-parcel">
+                    <h3>Parcel/Express</h3>
+                    <p class="value">158</p>
+                    <span class="trend">Ready for Pickup</span>
+                </div>
+                <div class="card card-warning">
+                    <h3>Delayed</h3>
+                    <p class="value">3</p>
+                    <span class="critical">Action Required</span>
+                </div>
+            </section>
+
+            <section class="shipment-table">
+                <h2>Active Shipments</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Shipment ID</th>
+                            <th>Type</th>
+                            <th>Carrier</th>
+                            <th>Status</th>
+                            <th>Priority</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#SH-1029</td>
+                            <td>LTL</td>
+                            <td>Blue Dart</td>
+                            <td><span class="status-badge loading">Loading</span></td>
+                            <td>High</td>
+                        </tr>
+                        <tr>
+                            <td>#SH-1030</td>
+                            <td>Inbound</td>
+                            <td>Vendor Express</td>
+                            <td><span class="status-badge received">Received</span></td>
+                            <td>Medium</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
